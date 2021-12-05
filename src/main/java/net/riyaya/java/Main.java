@@ -7,15 +7,15 @@ public class Main {
 
     public static void main(String[] args) {
         DiscordWebhook webhook = new DiscordWebhook("");
-        webhook.setContent("7Days To Dieサーバー");
+        webhook.setContent("test1");
         webhook.setTts(false);
         webhook.addEmbed(new DiscordWebhook.EmbedObject()
-                .setTitle("7Days To Die サーバーについて")
-                .setDescription("サーバーが起動しました!")
+                .setTitle("test2")
+                .setDescription("test3")
                 .setColor(Color.GREEN)
                 .setUrl("https://www.google.com/"));
         webhook.addEmbed(new DiscordWebhook.EmbedObject()
-                .setDescription("※これはテストです"));
+                .setDescription("test4"));
         try {
             webhook.execute(); //Handle exception
         } catch (IOException e) {
